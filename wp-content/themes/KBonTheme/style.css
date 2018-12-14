@@ -63,7 +63,9 @@ input:focus {
 	outline:0;
 	border:1px solid #04A4CC;
 }
-
+body .row{
+	margin: 0;
+}
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/

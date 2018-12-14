@@ -25,38 +25,49 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="jumbotron main-hero">
-			<?php 
-				wp_nav_menu( 
-					array( 
-					'container' => 'nav',
-					'theme_location' => 'header-menu', 
-					'menu_class' => 'custom-menu-class',
-					'menu_id' => '',
-					'items_wrap' => '<nav><ul>%3$s</ul></nav>', ) 
-				); 
-			?>
+			<nav class="navbar fixed-top navbar-dark main-nav">
+				<a class="navbar-brand" href="#">Cruz's Portfolio</a>
+				<a class="btn" id="menubtn">Menu</a>
+				<?php 
+					wp_nav_menu( 
+						array( 
+						'container' => 'ul',
+						'theme_location' => 'header-menu', 
+						'menu_class' => '',
+						'menu_id' => '', ) 
+					); 
+				?>
+			</nav>
+		</div>
+		<div class="modal" id="myModal">
+			<div class="modal-content">
+				<span id="close">&times;</span><br>
+				<?php 
+					wp_nav_menu( 
+						array( 
+						'container' => 'ul',
+						'theme_location' => 'header-menu', 
+						'menu_class' => '',
+						'menu_id' => '', ) 
+					); 
+				?>
+			</div>
 		</div>
 		<div class="row intro-row">
-			<div class="col">
+			<div class="col-12">
 				<h1 class="text-center font-weight-bold">Lorem Ipsum</h1>
 				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim recusandae placeat nam provident aliquam est veniam consectetur eum, quia voluptatibus harum, reprehenderit ut debitis optio similique commodi molestias veritatis.</h4>
 			</div>
-			
+			<div class="col">one</div>
+			<div class="col">two</div>
+			<div class="col">three</div>
 		</div>
-		<main role="main">
-			<!-- section -->
-			<section>
-
-				<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
-
-				<?php get_template_part('loop'); ?>
-
-				<?php get_template_part('pagination'); ?>
-
-			</section>
-			<!-- /section -->
-		</main>
-
+		<div class="row parrallax">
+			Hello World
+		</div>
+		<div class="row looprow">
+			<?php get_template_part('loop'); ?>
+		</div>
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

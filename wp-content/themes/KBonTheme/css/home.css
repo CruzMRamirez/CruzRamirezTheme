@@ -1,8 +1,112 @@
+body {
+    background: repeating-linear-gradient( 
+  -45deg,    
+  #B88F0A,    
+  #B88F0A 1px,    
+  #002040 2px,    
+  #002040 50px);
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 .main-hero {
     height: 80vh;
+    border-radius: 0;
+    margin-bottom: 0;
+    background-image: url(https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f2507356905735cb7d15583034c7faa&auto=format&fit=crop&w=1502&q=80);
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.intro-row {
+.intro-row,.looprow {
     background-color: #00162D;
     color: #fff;
     min-height: 40vh;
 }
+.parrallax {
+    height: 40vh;
+}
+.main-nav {
+    background-color: transparent;
+    color: #B88F0A;
+}
+.home nav ul a, .home nav .navbar-brand {
+    color: #B88F0A;
+    font-size: 2.5em;
+}
+.home nav .navbar-brand {
+    font-size: 3em;
+}
+.home nav ul {
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+}
+.home nav li {
+    padding: 20px;
+    display: inline;
+}
+nav a.btn {
+    display: none;
+    background-color: #B88F0A;
+    color: #fff !important;
+    font-size: 2.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.home .scrolled {
+    background-color: #00162D !important;
+    transition: background-color 200ms linear;
+}
+@media only screen and (max-width: 980px) {
+    nav ul {
+      display: none;
+    }
+    nav a.btn {
+        display: block;
+    }
+  }
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba( 0, 22, 45, .75);
+}
+.modal-content {
+    background-color: rgb(0, 33, 68);
+    display: block;
+    margin: auto;
+    margin-top: 25vh;
+    min-height: 50vh;
+    width: 75vw;
+    border-radius: 10px;
+    vertical-align:middle;
+    padding: 5vh;
+  }
+.modal .modal-content ul {
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    margin-top: 5vh;
+    text-align: center;
+    padding: 0;
+}
+.modal .modal-content ul li a {
+    color: #B88F0A;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+span#close {
+    text-align: right;
+    float: right;
+    color: #000;
+    font-size: 3.5em;
+    font-weight: 900;
+    background-color: transparent;
+    cursor: pointer;
+  }
