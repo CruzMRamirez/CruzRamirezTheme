@@ -132,6 +132,21 @@ function html5blank_styles()
 
     wp_register_style('css', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('css'); // Enqueue it!
+
+    wp_register_style('aboutcss', get_template_directory_uri() . '/css/about.css', array(), '1.0', 'all');
+    wp_enqueue_style('aboutcss'); // Enqueue it!
+
+    wp_register_style('contactcss', get_template_directory_uri() . '/css/contact.css', array(), '1.0', 'all');
+    wp_enqueue_style('contactcss'); // Enqueue it!
+
+    wp_register_style('faqcss', get_template_directory_uri() . '/css/faq.css', array(), '1.0', 'all');
+    wp_enqueue_style('faqcss'); // Enqueue it!
+
+    wp_register_style('portfoliocss', get_template_directory_uri() . '/css/portfolio.css', array(), '1.0', 'all');
+    wp_enqueue_style('portfoliocss'); // Enqueue it!
+
+    wp_register_style('homecss', get_template_directory_uri() . '/css/home.css', array(), '1.0', 'all');
+    wp_enqueue_style('homecss'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation

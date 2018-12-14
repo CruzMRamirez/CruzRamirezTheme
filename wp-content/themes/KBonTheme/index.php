@@ -24,7 +24,7 @@
 
 	</head>
 	<body <?php body_class(); ?>>
-		<div class="jumbotron">
+		<div class="jumbotron main-hero">
 			<?php 
 				wp_nav_menu( 
 					array( 
@@ -35,6 +35,13 @@
 					'items_wrap' => '<nav><ul>%3$s</ul></nav>', ) 
 				); 
 			?>
+		</div>
+		<div class="row intro-row">
+			<div class="col">
+				<h1 class="text-center font-weight-bold">Lorem Ipsum</h1>
+				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim recusandae placeat nam provident aliquam est veniam consectetur eum, quia voluptatibus harum, reprehenderit ut debitis optio similique commodi molestias veritatis.</h4>
+			</div>
+			
 		</div>
 		<main role="main">
 			<!-- section -->
